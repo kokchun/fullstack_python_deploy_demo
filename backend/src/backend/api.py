@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/pokemons/stats")
 async def show_data():
-    return df.to_dict()
+    return df.to_dict(orient="records")
