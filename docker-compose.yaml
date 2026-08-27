@@ -1,0 +1,8 @@
+services:
+  backend:
+    container_name: backend
+    build:
+      context: .
+      dockerfile: dockerfiles/backend.dockerfile
+    ports:
+      - "8000:8000"
